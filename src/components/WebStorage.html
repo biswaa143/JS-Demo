@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie and Storage Example</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript code here
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
+    const cookies = document.cookie;
+    console.log(cookies);
+
+    localStorage.setItem("username", "John Doe");
+    const username = localStorage.getItem("username");
+    console.log(username);
+
+    sessionStorage.setItem("userId", "12345");
+    const userId = sessionStorage.getItem("userId");
+    console.log(userId);
+  </script>
+</body>
+</html>
